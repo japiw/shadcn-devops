@@ -5,10 +5,5 @@ services:
     build: .
     container_name: shadcn-app
     ports:
-      - "8080:3000"
-    networks:
-      - belajar-net
-
-networks:
-  belajar-net:
-    external: true
+      - "3000:3000"
+    restart: unless-stopped
