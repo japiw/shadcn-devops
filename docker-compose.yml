@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: shadcn-app
+    ports:
+      - "8080:3000"
+    networks:
+      - belajar-net
+
+networks:
+  belajar-net:
+    external: true
