@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Run with Docker (GHCR)
+
+Pull image from Github Container Registry:
+
+docker pull ghcr.io./japiw/shadcn-devops-app:latest
+
+Run the container:
+
+docker run -p 3000:3000 ghcr.io/japiw/shadcn-devops-app:latest
+
+open http://localhost:3000 in browser
+
+## Run with Docker Compose
+
+docker compose up -d
+
+Open http://localhost:3000 in browser
+
+## Run Locally (Development)
+
+pnpm install
+
+pnpm dev
+
+## Docker Image
+
+ghcr.io/japiw/shadcn-devops-app:latest
